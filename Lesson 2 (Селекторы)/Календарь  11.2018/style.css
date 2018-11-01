@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+ h1 {
+	text-align: center;
+	color: rgb(0, 147, 202);
+	margin-bottom: 0;
+}
+.calendar-weekdays,
+.calendar-days{
+    display: flex;
+    flex-wrap: wrap;
+	width: 350px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+
+}
+.calendar-weekdays li, .calendar-days li{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 50px;
+	height: 50px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+.calendar-days li:nth-child(7n+6),
+.calendar-days li:nth-child(7n+7),
+.calendar-days li:nth-child(9) {
+	color: red;
+}
+.calendar-days li:nth-last-child(n+33),
+.calendar-days li:last-child,
+.calendar-days li:nth-last-child(2){
+	color: rgba(128, 128, 128,0.5);
+}
+{
+
+}
+.calendar-weekdays {
+ 	font-weight: bold;
+ 	margin-bottom: 15px;
+}
+
+.calendar-days li:hover{
+ 	background-color: rgba(204,221,255,1);
+}

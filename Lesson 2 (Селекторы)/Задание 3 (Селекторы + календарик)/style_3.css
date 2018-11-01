@@ -1,0 +1,58 @@
+/** Задание 1
+ * Написать CSS-правила для стилизации календаря таким образом, чтобы фон цвет текста (только числа)
+  ячеек выходных дней  был красного цвета
+ */
+
+/** Задание 2
+ * Написать CSS-правила для блока 2 задания div class="task2" таким образом, чтобы видимыми были только 8 первых блоков
+ */
+
+/** Дополнительное задание
+ * Написать CSS-правила таким образом, чтобы внутри блока div.extra-task выполнялись условия:
+ * если в меню 4 пункта, между ними был бы отступ в 30px;
+* а если 5 и более – то отступ 10px.
+**/
+* {
+	box-sizing: border-box;
+}
+.calendar-weekdays, .calendar-days{
+    display: flex;
+    flex-wrap: wrap;
+	width: 350px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+
+}
+.calendar-weekdays li, .calendar-days li{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 50px;
+	height: 50px;
+	font-family: Helvetica, sans-serif;
+}
+
+
+.calendar-days li:nth-child(7n+6),
+.calendar-days li:nth-child(7n+7){
+	background-color: rgba(255, 0, 0,0.2);
+	color: red;
+	border-radius: 20px;
+}
+
+.block:nth-child(n+9) {
+	display: none;
+}
+
+.extra-task nav ul {
+	display: flex;
+	list-style-type: none;
+}
+.extra-task ul li:not(:first-child) {
+	margin-left: 30px;
+}
+.extra-task ul li:nth-last-child(n+5):not(:first-child),
+.extra-task ul li:nth-child(n+5){
+	margin-left: 10px;
+}

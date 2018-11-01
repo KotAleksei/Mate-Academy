@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend align="center">Personal information</legend
+			<sup>*</sup>
+				<label for="name">Name: 
+					<input type="text" name="name" placeholder="Tom" required>
+
+				</label>
+				<sup>*</sup>
+				<label for="surname">Surname:
+					<input type="text" name="surname" placeholder="Easy" required>
+				</label>
+			<br><br>
+			<div >
+				<sup>*</sup>
+				<label for="age">How old are you?
+					<input type="number" min="0" max="120" name="age" placeholder="18" required>
+				</label>
+			</div>
+			</fieldset>
+
+			<fieldset>
+				<legend align="center">Registration</legend>
+				<div>
+					<sup>*</sup>
+					<label for="email">E-mail:
+						<input type="email" name="email" placeholder="example@yourmail.com" required>
+					</label>
+				</div>
+				<br>
+				<div>
+					<sup>*</sup>
+					<label for="password">Password:
+						<input type="password" name="password" placeholder="******" minlength="6" required>
+					</label>
+				</div>
+			</fieldset>
+			<fieldset ">
+				<legend align="center">Information about you</legend>
+				<div>		
+				<label for="favorite_color">What is you favorite color?		
+					<input type="color" name="favorite_color" value="#840613" style="display: block; ">
+				</label>
+				</div>
+				<br>
+				<label for="">Do you love Frond-end?
+					<input type="radio" name="answer"> Yes.
+					<input type="radio" name="answer"> Yes.
+				</label>
+				<br><br>
+				<div>
+				<label for="">When you go to bad? 
+					<input type="time" name="time_for_chill" id="timepicker">
+				</label>
+				</div>
+				<br>
+				<label for="">What is your favorite car?
+					<div>
+						<select name="select"> 
+							<option value="BMW">BMW</option> 
+							<option value="Mersedec">Mersedec Benz</option> 
+							<option value="Audi" selected>Audi</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+				</label>
+				<br>
+				<div>
+					<label for="">Your comments</label>
+					<div>
+					<textarea name="other_information" id="" cols="30" rows="3" ></textarea>
+					</div>
+				</div>
+				<p><sup>*</sup> This field is required</p>
+			</fieldset>
+
+			<button type="submit">Submit</button>
+			
+
+	</form>
+</body>
+</html>
