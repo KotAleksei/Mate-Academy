@@ -1,0 +1,170 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 16px/1.46 "Inter UI", sans-serif;
+}
+.hide {
+	display: none;
+}
+.task {
+	display: flex;
+	flex-direction: column-reverse;
+}
+ .hide + label {
+	display: block;
+	width: 120px;
+	margin-left: 63%;
+	border: 3px solid green;
+	border-radius: 10vw;
+	cursor: pointer;
+	text-align: center;
+	margin-top: 1vw;
+	background-color: #fff;
+}
+.hide + label:hover {
+  transition: 1.3s;
+  background-color: grey;
+}
+
+.main_content {
+	display: block;
+	width: 600px;
+	margin: 0 auto;
+	font-style: italic;
+	background-color: #fff;
+	white-space: nowrap; /* Свойство игнорирует все проеблы, отображаеться одной строкой */
+	overflow: hidden; /* Скрывает текст который не влез в блок*/
+	text-overflow: ellipsis; /*Если влез не весь контент добавляет ...*/
+	border-radius: 2vw;
+	border: 3px solid green;
+	padding: 10px;
+}
+
+
+.hide:checked ~ .main_content {
+	white-space: pre-line; /* Игнорируються пробелы, если текст не помещаеться в блок - перенос на новую строку */
+}
+
+.score {
+	margin: 20px auto;
+	display: flex;
+	flex-direction: row-reverse;
+	width: 350px;
+	justify-content: center;
+	background-color: #fff;
+	border: 3px solid green;
+}
+.score input {
+	display: none;
+}
+
+.score:not(:checked) input {
+	cursor: pointer;
+}
+
+.score:not(:checked) label {
+    color: grey;
+    cursor: pointer;
+ }
+
+.score:not(:checked) label:before {
+    content: "\2605";
+    font-size: 50px;
+}
+
+.score input:checked ~ label {
+    color: gold;
+}
+
+.score:not(:checked) label:hover,
+.score:not(:checked) label:hover ~ label {
+    color: yellow;
+}
+
+.progress_bar{
+  margin: 20px auto;
+  width: 500px;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: inset 0px 0px 4px 1px black;
+  background-color: #fff;
+}
+
+.progress_line {
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(to top, #85ee46, #63c01b, #85ee46);
+  border-radius: 20px 20px 20px 20px;
+}
+
+.persent_progress {
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.my_button {
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	height: 30px;
+	border-radius: 20px;
+	outline: none; /* Убираем синию обводку при нажатии*/
+	transition: 1.3s;
+}
+
+.my_button:hover {
+	background-color: grey;
+}
+.brazzers {
+	display: inline-block;
+	width: 100%;
+	list-style: none;
+	margin: 40px auto;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.brazzers img:first-child {
+	color: red;
+}
+.brazzers img:first-child:before {
+	content: "Ch";
+	color: lightgreen;
+}
+.brazzers img:first-child:after {
+	content: "me";
+	color: #FFD700;
+}
+.brazzers img:nth-child(2) {
+	color: orange;
+}
+.brazzers img:nth-child(3) {
+	color: red;
+}
+.brazzers img:last-child {
+	word-spacing: 10vw;
+	color: blue;
+}
+.some_lorem_ipsum {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+}
+.big_letter {
+	width: 100%;
+	font-weight: bold;
+	padding-left: 20px;
+}
+.text_in_footer {
+	border: 3px solid green;
+}

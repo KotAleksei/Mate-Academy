@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+	<div class="task">
+		<input type="checkbox" id="test" class="hide">
+		<label for="test">Read More</label>
+		<span class="main_content">
+			Программирование как вид человеческой деятельности.
+			В качестве введения мне хотелось бы начать разговор с истории и цитат.
+			История эта  о физике Людвиге Больцмане, который хотел достичь своих результатов путем громоздких вычислений. Кто-то однажды пожаловался на то, что его методы ужасны, на что Больцман заявил, что об элегантности должны заботиться портные и сапожники, дав тем самым понять, что его самого это никоим образом не беспокоит.
+			В противоположность ему, я хотел бы процитировать другого известного ученого XIX века, Джорджа Буля. В своей книге Исследование законов мышления, в главе Условия совершенного метода, он писал: Я говорю здесь не только о том совершенстве, которое состоит в могуществе, но и о том, которое основывается на концепции изящества и красоты. Вполне возможно, что тщательное изучение этого вопроса приведет нас к выводу, что совершенный метод должен быть не только эффективным по отношению к объектам, для которых он разработан, но и демонстрировать определенное единство и гармонию всех своих частей и процессов. Вряд ли кто-то не заметит коренного различия в этих подходах.
+			Мы подсознательно ассоциируем элегантность с роскошью. Возможно, это одна из причин того, что для нас само собой разумеется, что элегантность должна дорого обходиться. Одна из моих основных целей  показать, что элегантность может быть также выгодна. Это даст нам ясное понимание истинной природы качества программ и пути, которым оно может быть достигнуто, а именно  языка программирования. Поняв это, мы попытаемся вывести некоторые ключевые моменты, например, какие особенности языков программирования являются наиболее предпочтительными. Наконец, мы надеемся убедить вас в том, что различные цели конфликтуют друг с другом меньше, чем это кажется на первый взгляд.
+		</span>
+	</div>
+	<div class="score">
+		
+		<input type="radio" name="star" id="star-5" value="5"><label for="star-5"></label>
+		<input type="radio" name="star" id="star-4" value="4"><label for="star-4"></label>
+		<input type="radio" name="star" id="star-3" value="3"><label for="star-3"></label>
+		<input type="radio" name="star" id="star-2" value="2"><label for="star-2"></label>
+		<input type="radio" name="star" id="star-1" value="1"><label for="star-1"></label>
+	</div>
+	<!-- Можно также использовать тег <progress> -->
+	<div class="progress_bar">
+	  	<div class="progress_line"></div>
+		<p class="persent_progress">
+			20%
+		</p>
+	</div>
+	<div>
+		<button class="my_button">Кнопка</button>
+	</div>
+	<div class="brazzers">
+		<img src="img/google.png" alt="ro" class="left" width="15%" height="100%">
+		<img src="img/mozilla.png" alt="Firefox" class="left" width="15%" height="100%">
+		<img src="img/opera.png" alt="Opera" class="left" width="15%" height="100%">
+		<img src="img/safari.png" alt="Safari" class="left" width="15%" height="100%">
+		<img src="img/ie.png" alt="Internet Explorer" class="right" width="15%" height="100%">
+	</div>
+	<div class="text_in_footer">
+		<h2 class="big_letter">Article about ipsum</h2>
+		<div class="some_lorem_ipsum">
+			<p>
+				<span>Article about ipsum</span>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti numquam natus cum esse corporis laborum veniam quae. Illum, tenetur, praesentium! Voluptas, delectus. Repellendus similique id laborum doloremque, mollitia voluptas ea?</span><span>Quod ab, possimus illo voluptas beatae, dolores, aut eaque id repellendus ut sunt inventore. Ea nesciunt ipsam enim, officia culpa repudiandae libero, sapiente porro veritatis magnam saepe reiciendis ipsa quia?</span>
+			</p>
+			<p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nam enim harum necessitatibus, autem optio laborum, molestiae voluptatum veniam rem qui pariatur consequuntur. Quia tenetur, ea officia itaque sequi saepe.</span><span>Sapiente, tempore cumque! Consequatur at hic veritatis. Cum consequatur recusandae cupiditate tempore! Nesciunt, fugit laudantium, ducimus et nam illo quae cum reprehenderit magnam harum. Voluptatibus aliquid atque culpa iure, dignissimos.</span>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+<!--
+		<div class="read_more">
+			<input type="checkbox" id="test" class="hide">
+			<label for="test">Put here to see all article</label>
+		</div>
+		css 
+		.first_ask {
+		display: flex;
+	flex-direction: column-reverse;
+
+		}
+		.read_more {
+	text-align: center;
+	}
+						Но как в таком случае обратиться к .hide:checked ~ .main_contain???
+-->

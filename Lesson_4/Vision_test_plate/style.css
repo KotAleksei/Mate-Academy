@@ -1,0 +1,49 @@
+
+html,body {
+	margin: 0;
+	padding: 0;
+	font-size: 1vw;
+	font-family: Arial, sans-serif;
+	background-color: #F0FFF0;
+
+}
+ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+ul li {
+	list-style: none;
+	margin-top: 1.3vw;
+	display: flex;
+}
+
+.vision_table {
+	margin: 7vh auto;
+	width: 30vw;
+	border: 0.1vh solid grey;
+	background-color: #fff;
+}
+
+.vis_1 li {
+	font-size: 10rem;
+}
+
+.vis_2 li {
+	font-size: 8rem;
+}
+.vis_3 li {
+	font-size: 6rem;
+}
+.vis_4 li {
+	font-size: 4rem;
+}
+.vis_5 li {
+	font-size: 2rem;
+}
+.vist_6 {
+	font-size: 1rem;
+}
