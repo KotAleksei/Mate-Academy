@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	background-image: url(img/fon1.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 400px;
+	height: 400px;
+	background-color: #fff;
+	opacity: 0.96;
+	border-radius: 20px 20px 0 0 ;
+}
+.head_card {
+	width: 100%;
+	height: 200px;
+	background-color: #2cb4dc;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 20px 20px 0 0 ;
+}
+.img_card {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img_card img:first-child {
+	padding-top: 8px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+.personal_inf {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-right: auto;
+}
+.personal_inf p:first-child,
+.personal_inf p:nth-child(2) {
+	align-self: center;
+	color: #fff;
+	font: bold 25px Helvetica, sans-serif;
+	text-transform: uppercase;
+	margin-right: auto;
+}
+.personal_inf p:nth-child(3) {
+	align-self: center;
+	color: #fff;
+	font: 18px Helvetica, sans-serif;
+	margin-right: auto;
+}
+
+.follow_information {
+	margin: 0 auto;
+	height: 120px;
+	display: flex;
+	width: 400px;
+	min-width: 250px;
+	justify-content: center;
+	align-items: center;
+}
+
+.follow_information p {
+	background-color: #f8f3f0;
+	width: 30%;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+.follow_information p:nth-child(n):not(:first-child) {
+	border-left: 2px solid #fff;
+}
+
+.follow_information p span {
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+.follow_information p a {
+	display: block;
+	text-decoration: none;
+	color: #9c918a;
+}
+.follow_information p:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+.tweets {
+	border-radius: 20px 0 0 20px;
+}
+.followers {
+	border-radius: 0 20px 20px 0;
+}
+.footer {
+	background-color: #f8f3f0;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 0 20px 20px;
+}
+
+.footer_button {
+	width: 60%;
+	height: 40px;
+	background: linear-gradient(0deg,#e15633,#e7653e);
+	outline: none;
+	border-radius: 10px;
+	color: #fff;
+	word-spacing: 3px;
+}
+.footer_button:hover {
+	background: linear-gradient(90deg,#d14231,#E34234);
+	cursor: pointer;
+}
